@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, {
         root: null,
-        threshold: 0.15, // Trigger when 15% of element is visible
-        rootMargin: "0px 0px -50px 0px"
+        threshold: 0.05, // Lebih mudah terdeteksi di HP
+        rootMargin: "0px 0px 0px 0px"
     });
 
     revealElements.forEach(el => {

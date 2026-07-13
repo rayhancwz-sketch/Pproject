@@ -341,6 +341,9 @@ img, video {
     color: var(--clr-text-white);
     max-width: 800px;
     padding: 0 20px;
+    /* Always visible, no reveal animation on hero */
+    opacity: 1;
+    transform: none;
 }
 
 .hero-subtitle {
@@ -348,6 +351,7 @@ img, video {
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 1rem;
+    color: var(--clr-primary-light);
     animation: fadeInDown 1s ease forwards;
 }
 
@@ -357,8 +361,7 @@ img, video {
     margin-bottom: 2.5rem;
     color: var(--clr-text-white);
     text-shadow: 0 0 10px rgba(212, 175, 55, 0.5), 0 0 20px rgba(212, 175, 55, 0.8), 0 0 40px var(--clr-primary);
-    animation: fadeInUp 1s ease 0.3s forwards;
-    opacity: 0;
+    animation: fadeInUp 1s ease 0.3s both;
 }
 
 /* ==========================================================================
