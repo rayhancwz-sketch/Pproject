@@ -1,4 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // 0. Force Hero Video Autoplay (Bypass Mobile Restrictions)
+    const heroVideo = document.querySelector('.hero-video');
+    if (heroVideo) {
+        heroVideo.muted = true; // Wajib di-mute ulang via JS
+        heroVideo.play().catch(error => {
+            console.log("Autoplay diblokir oleh browser:", error);
+        });
+        
+        // Jika gagal autoplay (misal karena low power mode), paksa putar saat layar disentuh pertama kali
+        document.body.addEventListener('touchstart', () => {
+            heroVideo.play();
+        }, { once: true });
+        document.body.addEventListener('click', () => {
+            heroVideo.play();
+        }, { once: true });
+    }
+
     // 1. Transparent to Solid Navbar on Scroll
     const navbar = document.getElementById('navbar');
     
