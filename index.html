@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P Project Indonesia - Event & Wedding Organizer Jambi</title>
+    <meta name="description" content="Wedding Organizer elegan dan romantis di Jambi. Mewujudkan pernikahan impian Anda bersama P Project Indonesia.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome untuk Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo" style="flex-direction: row; align-items: center; gap: 12px;">
+                <img src="/logo.jpg" alt="P Project Logo" style="height: 45px; border-radius: 4px;">
+                <div style="display: flex; flex-direction: column;">
+                    <span class="logo-text">P Project Indonesia</span>
+                    <span class="logo-sub">Event & Wedding Organizer</span>
+                </div>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-links">Beranda</a></li>
+                <li><a href="#about" class="nav-links">Tentang Kami</a></li>
+                <li><a href="#services" class="nav-links">Layanan</a></li>
+                <li><a href="#video-showcase" class="nav-links">Video Showcase</a></li>
+                <li><a href="#gallery" class="nav-links">Galeri</a></li>
+                <li><a href="#contact" class="nav-links btn-contact">Hubungi Kami</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background Video -->
+    <section id="home" class="hero">
+        <!-- Video Latar Belakang Placeholder -->
+        <video autoplay loop muted playsinline class="hero-video">
+            <source src="/hero-video.mp4" type="video/mp4">
+            <!-- Video akan otomatis dimuat dari folder public -->
+        </video>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content reveal">
+            <p class="hero-subtitle">Mewujudkan Hari Spesial Anda di Jambi</p>
+            <h1 class="hero-title">Elegansi & Romansa<br>Dalam Setiap Momen</h1>
+            <a href="#contact" class="cta-button">Rencanakan Sekarang <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container layout-grid-2">
+            <div class="about-image reveal fade-right">
+                <img src="/meyden.jpg" alt="Pernikahan Elegan">
+                <div class="experience-badge">
+                    <span class="number">5+</span>
+                    <span class="text">Tahun<br>Pengalaman</span>
+                </div>
+            </div>
+            <div class="about-text reveal fade-left">
+                <h2 class="section-title">Kisah Cinta Anda,<br>Keahlian Kami</h2>
+                <div class="divider"></div>
+                <p><strong>P Project Indonesia</strong> adalah Event & Wedding Organizer terpercaya di Jambi yang berdedikasi untuk menciptakan momen romantis dan tak terlupakan. Kami percaya bahwa setiap pasangan memiliki kisah cinta yang unik, dan pernikahan mereka harus mencerminkan keunikan tersebut.</p>
+                <p>Dengan sentuhan elegan, kekinian, dan perhatian pada setiap detail, tim profesional kami akan memastikan hari istimewa Anda berjalan sempurna, sehingga Anda dapat menikmati setiap detik tanpa rasa khawatir.</p>
+                <a href="#services" class="outline-button">Lihat Layanan Kami</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding bg-light">
+        <div class="container text-center reveal">
+            <h2 class="section-title">Layanan Eksklusif Kami</h2>
+            <div class="divider center"></div>
+            <p class="section-subtitle">Dari perencanaan awal hingga hari H, kami hadir untuk Anda.</p>
+            
+            <div class="services-grid">
+                <div class="service-card reveal fade-up">
+                    <div class="service-icon"><i class="fa-solid fa-rings-wedding"></i></div>
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Wedding Package" class="service-img">
+                    <h3>All-in Wedding Package</h3>
+                    <p>Paket lengkap mulai dari gedung, katering, dekorasi elegan, hingga dokumentasi. Pilihan tepat untuk ketenangan pikiran.</p>
+                </div>
+                <div class="service-card reveal fade-up" style="transition-delay: 0.2s;">
+                    <div class="service-icon"><i class="fa-solid fa-gem"></i></div>
+                    <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Engagement" class="service-img">
+                    <h3>Lamaran & Engagement</h3>
+                    <p>Konsep lamaran romantis nan hangat dengan dekorasi kekinian dan penataan acara yang intim untuk keluarga.</p>
+                </div>
+                <div class="service-card reveal fade-up" style="transition-delay: 0.4s;">
+                    <div class="service-icon"><i class="fa-solid fa-calendar-star"></i></div>
+                    <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Event Organizer" class="service-img">
+                    <h3>Custom Events</h3>
+                    <p>Ulang tahun, perayaan *anniversary*, atau acara perusahaan dengan standar estetika tinggi dan pengorganisasian rapi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Showcase Section -->
+    <section id="video-showcase" class="video-showcase section-padding">
+        <div class="container text-center reveal">
+            <h2 class="section-title">Cinematic Moments</h2>
+            <div class="divider center"></div>
+            <p class="section-subtitle">Kompilasi momen indah dari klien-klien kami.</p>
+            
+            <div class="video-container ig-reel reveal fade-up">
+                <video src="/meydenvideo.mp4" autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;"></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section-padding bg-light">
+        <div class="container text-center reveal">
+            <h2 class="section-title">Galeri Momen</h2>
+            <div class="divider center"></div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="/1 (1).jpg" alt="Gallery 1"></div>
+                <div class="gallery-item"><img src="/1 (2).jpg" alt="Gallery 2"></div>
+                <div class="gallery-item"><img src="/1 (3).jpg" alt="Gallery 3"></div>
+                <div class="gallery-item"><img src="/1 (4).jpg" alt="Gallery 4"></div>
+                <div class="gallery-item"><img src="/1 (5).jpg" alt="Gallery 5"></div>
+                <div class="gallery-item"><img src="/1 (6).jpg" alt="Gallery 6"></div>
+            </div>
+            
+            <a href="#" class="outline-button mt-4">Lihat Lebih Banyak</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container layout-grid-2">
+            <div class="contact-info reveal fade-right">
+                <h2 class="section-title">Mari Rencanakan Bersama</h2>
+                <div class="divider"></div>
+                <p>Beritahu kami impian pernikahan Anda, dan kami akan merangkainya menjadi kenyataan. Hubungi kami untuk konsultasi gratis.</p>
+                
+                <ul class="info-list">
+                    <li><i class="fa-solid fa-location-dot"></i> Jl. Pattimura No. 123, Kota Jambi, Jambi</li>
+                    <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/628117411190" target="_blank" style="color: inherit;">+62 811-7411-190</a></li>
+                    <li><i class="fa-solid fa-envelope"></i> hello@pprojectindonesia.com</li>
+                    <li><i class="fa-brands fa-instagram"></i> @pproject.indonesia</li>
+                </ul>
+            </div>
+            
+            <div class="contact-form reveal fade-left">
+                <form id="inquiryForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Nomor WhatsApp" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="service" required>
+                            <option value="" disabled selected>Pilih Layanan</option>
+                            <option value="wedding">Wedding Package</option>
+                            <option value="engagement">Engagement</option>
+                            <option value="other">Event Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="date" placeholder="Rencana Tanggal (Opsional)">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="4" placeholder="Ceritakan impian Anda..." required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button full-width">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h2>P Project Indonesia</h2>
+                <p>Event & Wedding Organizer terpercaya di Jambi, mewujudkan pernikahan impian dengan sentuhan elegan dan romantis.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Tautan Cepat</h3>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#gallery">Galeri</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Ikuti Kami</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 P Project Indonesia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
