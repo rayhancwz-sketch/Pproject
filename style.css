@@ -301,7 +301,7 @@ img, video {
 }
 
 /* ==========================================================================
-   Hero Section - CSS Animated Background (No Video, No Lag)
+   Hero Section with Video
    ========================================================================== */
 .hero {
     position: relative;
@@ -313,56 +313,17 @@ img, video {
     overflow: hidden;
 }
 
-.hero-bg-animated {
+.hero-video {
     position: absolute;
-    inset: 0;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
     z-index: -2;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1200 30%, #0a0a0a 60%, #1a0d00 100%);
-    background-size: 400% 400%;
-    animation: heroShift 12s ease infinite;
-}
-
-@keyframes heroShift {
-    0%   { background-position: 0% 50%; }
-    50%  { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-/* Floating Gold Particles */
-.hero-particles {
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    overflow: hidden;
-}
-
-.hero-particles span {
-    position: absolute;
-    display: block;
-    width: 4px;
-    height: 4px;
-    background: var(--clr-primary);
-    border-radius: 50%;
-    box-shadow: 0 0 10px var(--clr-primary), 0 0 20px var(--clr-primary);
-    animation: floatParticle linear infinite;
-    opacity: 0;
-}
-
-.hero-particles span:nth-child(1)  { left: 10%; animation-duration: 8s;  animation-delay: 0s;   width: 3px;  height: 3px; }
-.hero-particles span:nth-child(2)  { left: 20%; animation-duration: 12s; animation-delay: 2s;   width: 5px;  height: 5px; }
-.hero-particles span:nth-child(3)  { left: 35%; animation-duration: 9s;  animation-delay: 4s;   width: 2px;  height: 2px; }
-.hero-particles span:nth-child(4)  { left: 50%; animation-duration: 14s; animation-delay: 1s;   width: 4px;  height: 4px; }
-.hero-particles span:nth-child(5)  { left: 60%; animation-duration: 10s; animation-delay: 3s;   width: 6px;  height: 6px; }
-.hero-particles span:nth-child(6)  { left: 70%; animation-duration: 7s;  animation-delay: 0.5s; width: 3px;  height: 3px; }
-.hero-particles span:nth-child(7)  { left: 80%; animation-duration: 11s; animation-delay: 2.5s; width: 4px;  height: 4px; }
-.hero-particles span:nth-child(8)  { left: 90%; animation-duration: 13s; animation-delay: 1.5s; width: 2px;  height: 2px; }
-.hero-particles span:nth-child(9)  { left: 45%; animation-duration: 8s;  animation-delay: 3.5s; width: 5px;  height: 5px; }
-
-@keyframes floatParticle {
-    0%   { transform: translateY(100vh) scale(0); opacity: 0; }
-    10%  { opacity: 1; }
-    90%  { opacity: 0.8; }
-    100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+    object-fit: cover;
 }
 
 .hero-overlay {
